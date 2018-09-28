@@ -6,6 +6,8 @@ def gcd(x, y):
 class Fraction:
 
     def __init__(self, top, bottom):
+        #Need to figure out how to check that both top and bottom are integers, and if they are to throw and exception
+
         common = gcd(top,bottom)
         self.numerator = top//common
         self.denominator = bottom//common
@@ -101,7 +103,7 @@ print("1/4 - 3/4 =", Fraction(1,4) - Fraction(3,4))
 print("1/3 * 1/2 =", Fraction(1,3) * Fraction(1,2))
 print("1/7 / 1/7 =", Fraction(1,7) / Fraction(1,7))
 
-print(Fraction(1,2) < Fraction(2,4))
+
 
 
 
