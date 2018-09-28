@@ -7,6 +7,8 @@ class Fraction:
     def _str_(self):
         return str(self.numerator) + "/" + str(self.denominator)
 
+myFraction = Fraction(3,5)
+print(myFraction)
 
 
 
