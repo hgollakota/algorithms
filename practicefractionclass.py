@@ -1,3 +1,8 @@
+def gcd(x, y):
+    while y != 0:
+        (x, y) = (y, x % y)
+    return x
+
 class Fraction:
 
     def __init__(self, top, bottom):
@@ -10,10 +15,7 @@ class Fraction:
     def __add__(self,otherFraction):
         newNumerator = self.numerator * otherFraction.denominator + self.denominator * otherFraction.numerator
         newDenominator = self.denominator * otherFraction.denominator
-        def gcd(x, y):
-            while y != 0:
-                (x, y) = (y, x % y)
-            return x
+
         common = gcd(newNumerator,newDenominator)
         return Fraction(newNumerator//common,newDenominator//common)
 
