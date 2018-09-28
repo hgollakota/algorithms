@@ -1,10 +1,10 @@
 class Fraction:
 
-    def _init_(self, top, bottom):
+    def __init__(self, top, bottom):
         self.numerator = top
         self.denominator = bottom
 
-    def _str_(self):
+    def __str__(self):
         return str(self.numerator) + "/" + str(self.denominator)
 
 myFraction = Fraction(3,5)
