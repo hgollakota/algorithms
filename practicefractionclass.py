@@ -1,13 +1,13 @@
+def gcd(x, y):
+    while y != 0:
+        (x, y) = (y, x % y)
+    return x
+
 class Fraction:
 
     def __init__(self, top, bottom):
-
         #Need to figure out how to check that both top and bottom are integers, and if they are to throw and exception
 
-        def gcd(x, y):
-            while y != 0:
-                (x, y) = (y, x % y)
-            return x
         common = gcd(top,bottom)
         self.numerator = top//common
         self.denominator = bottom//common
